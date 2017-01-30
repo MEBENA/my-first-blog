@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<head>
+  <title>Django </title>
+</head>
+<body align=center>
+	<h3>Hello, world!</h3>
+	<br>
+	<h1>{{ex}}</h1>
+	<form  action="/polls/name">
+		<p><h2>Enter your name:</h2></p>
+		<input type='text' name="A" id="A">
+		<input type='submit' value='Next'>
+		<br><br>
+		<a href="{% url 'english' %}">White</a>
+		<a href="{% url 'black' %}">Русский</a>
+	</form>
+</body>
+</html>
+
+<style>
+	*{
+		background-color:black;
+		color:white;
+	}
+</style>
